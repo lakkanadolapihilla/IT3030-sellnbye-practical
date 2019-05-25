@@ -26,61 +26,117 @@
 </head>
 
 <body>
-		<div class="row">
-			<div class="span9">				
-				<h3> Add Buyer</h3>
-				<hr class="soft" />
-				<div class="well">
-					<form id="buyer_registration_form" class="form-horizontal">
-						<h3>Buyer Details</h3>
-						<div class="control-group">
-							<label class="control-label" for="registration_inputUsername">Username <sup>*</sup></label>
-							<div class="controls">
-								<input type="text" id="registration_inputUsername" placeholder="First Name" required>
-							</div>
+	<div class="row">
+		<div class="span9">
+			<h3> Add Buyer</h3>
+			<hr class="soft" />
+			<div class="well">
+				<form id="buyer_registration_form" class="form-horizontal">
+					<h3>Buyer Details</h3>
+					<div class="control-group">
+						<label class="control-label" for="registration_inputUsername">Username <sup>*</sup></label>
+						<div class="controls">
+							<input type="text" id="registration_inputUsername" placeholder="First Name" required>
 						</div>
-						<div class="control-group">
-							<label class="control-label" for="registration_inputContactnumber">Contact Number <sup>*</sup></label>
-							<div class="controls">
-								<input type="text" id="registration_inputContactnumber" placeholder="Contact Number" required>
-							</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="registration_inputContactnumber">Contact Number
+							<sup>*</sup></label>
+						<div class="controls">
+							<input type="text" id="registration_inputContactnumber" placeholder="Contact Number"
+								required>
 						</div>
-						<div class="control-group">
-							<label class="control-label" for="registration_inputEmail">Email <sup>*</sup></label>
-							<div class="controls">
-								<input type="text" id="registration_inputEmail" placeholder="Email" required>
-							</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="registration_inputEmail">Email <sup>*</sup></label>
+						<div class="controls">
+							<input type="text" id="registration_inputEmail" placeholder="Email" required>
 						</div>
-						<div class="control-group">
-							<label class="control-label">Password <sup>*</sup></label>
-							<div class="controls">
-								<input type="password" id="registration_inputPassword" placeholder="Password" required>
-							</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label">Password <sup>*</sup></label>
+						<div class="controls">
+							<input type="password" id="registration_inputPassword" placeholder="Password" required>
 						</div>
-						<div class="control-group">
-							<label class="control-label">Profile Picture</label>
-							<div class="controls">
-								<input type="file" id="registration_inputProfilepicture" placeholder="Photo" accept=".png, .jpg, .jpeg" required>
-							</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label">Profile Picture</label>
+						<div class="controls">
+							<input type="file" id="registration_inputProfilepicture" placeholder="Photo"
+								accept=".png, .jpg, .jpeg" required>
 						</div>
-						<div class="control-group">
-							<div class="controls">
-								<input type="submit" name="submitAccount" value="Register" class="exclusive shopBtn">
-							</div>
+					</div>
+					<div class="control-group">
+						<div class="controls">
+							<input type="submit" name="submitAccount" value="Register" class="exclusive shopBtn">
 						</div>
-					</form>
-				</div>
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+	<div>
+		<div class="span9">
+			<div id="users_userlist" class="well well-small">
+
 
 			</div>
 		</div>
-		<div>
-			<div class="span9">
-				<div id="users_userlist" class="well well-small">
-					
+	</div>
 
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Edit User</h5>
+				</div>
+				<div class="modal-body">
+					<div class="well">
+						<form id="edituser_form" class="form-horizontal">
+							<div class="control-group">
+								<label class="control-label" for="edituser_inputUsername">Username
+									<sup>*</sup></label>
+								<div class="controls">
+									<input type="text" id="edituser_inputUsername" placeholder="First Name" disabled>
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="edituser_inputContactnumber">Contact Number
+									<sup>*</sup></label>
+								<div class="controls">
+									<input type="text" id="edituser_inputContactnumber" placeholder="Contact Number">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="edituser_inputEmail">Email
+									<sup>*</sup></label>
+								<div class="controls">
+									<input type="text" id="edituser_inputEmail" placeholder="Email">
+								</div>
+							</div>
+
+							<div class="control-group">
+								<label class="control-label" for="edituser_isActive">Active <sup>*</sup></label>
+								<div class="controls">
+									<input type="checkbox" id="edituser_isActive" name="Active" value="Active">
+								</div>
+							</div>
+							<div class="control-group">
+								<div class="controls">
+									<input type="submit" name="submitAccount" value="Edit" class="exclusive shopBtn">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 				</div>
 			</div>
 		</div>
+	</div>
 
 	<a href="#" class="gotop"><i class="icon-double-angle-up"></i></a>
 	<script src="assets/js/jquery.js"></script>
